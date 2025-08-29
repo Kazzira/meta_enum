@@ -234,7 +234,7 @@ constexpr std::array<EnumType, size> resolveEnumValuesArray(const std::initializ
             result = Type##_meta.members[i];\
         return result;\
     \
-    };
+    }
 
 #define meta_enum_class(Type, UnderlyingType, ...)\
     enum class Type : UnderlyingType { __VA_ARGS__};\
@@ -286,4 +286,4 @@ constexpr std::array<EnumType, size> resolveEnumValuesArray(const std::initializ
             result = Type##_meta.members[i];\
         return result;\
     \
-    };
+    }
